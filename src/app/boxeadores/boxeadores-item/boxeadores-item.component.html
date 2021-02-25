@@ -1,0 +1,14 @@
+
+<li appMostrarMes class="list-group-item list-group-item d-flex justify-content-between align-items-center border border-secondary rounded-sm">
+    <div class="text-center" style="max-width: 200px;">
+        <img class="img-fluid rounded" [src]="boxeador.photo">
+    </div>
+    <div>
+        <p class="text-success">Boxeador: {{boxeador.id}}</p>
+        <p>Boxeador: {{boxeador.nombre}}</p>
+        <p class="ocultar" style="display: none;">Edad: {{boxeador.edad}}</p>
+        <p class="ocultar1" style="display: none;">Nacionalidad: {{boxeador.nacionalidad}}</p>
+        <button (click)="mostrarMensajeInfo()"  type="button" class="btn btn-warning">Información</button>
+    </div>
+    <a class="btn btn-outline-info" [routerLink]="['/boxeador' , boxeador.id ]"> Información</a>
+</li>

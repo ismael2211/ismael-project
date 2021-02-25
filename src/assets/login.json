@@ -1,0 +1,4 @@
+[
+    {"login" : "ismael" , "token":"abcdefgijk" , "passwd":"12345"},
+    {"login" : "alan" , "token":"abcdefgijk1234" , "passwd" : "12345"}
+]

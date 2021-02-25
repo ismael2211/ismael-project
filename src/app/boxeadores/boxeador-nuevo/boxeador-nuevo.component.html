@@ -1,0 +1,91 @@
+<body>
+
+  <br>
+
+  <div class="container text-center">
+
+    <h2 class="text-success">Añadir nuevo boxeador</h2><br>
+    <hr>
+    <form [formGroup]="formulario" (ngSubmit)="crear()">
+      <div class="form-group row">
+        <label class="control-label col-sm-5" for="email"></label>
+        <div class="col-sm-4">
+          <input type="number" class="form-control" id="id" placeholder="Enter id" formControlName="id">
+        </div>
+        <div *ngIf="formulario.controls['id'].invalid" class="alert" style="color: red;z-index: -99;">El id no puede
+          estar vacio</div>
+      </div><br>
+      <div class="form-group row">
+        <label class="control-label col-sm-3" for="pwd"></label>
+        <div class="col-sm-4">
+          <input type="text" class="form-control" id="nombre" placeholder="Nombre Boxeador" formControlName="nombre">
+        </div>
+        <div *ngIf="formulario.controls['nombre'].invalid" class="alert" style="color: red;z-index: -99;">El nombre debe
+          tener como minimo 3 caracteres</div>
+
+      </div><br>
+      <div class="form-group row">
+        <label class="control-label col-sm-5" for="pwd"></label>
+        <div class="col-sm-4">
+          <input type="number" class="form-control" id="edad" placeholder="Indica la edad" formControlName="edad">
+        </div>
+        <div *ngIf="formulario.controls['edad'].invalid" class="alert" style="color: red;z-index: -99;">La edad no puede
+          estar vacia</div>
+
+      </div><br>
+      <div class="form-group row">
+        <label class="control-label col-sm-3" for="pwd"></label>
+        <div class="col-sm-4">
+          <input type="text" class="form-control" id="" placeholder="Categoria" formControlName="categoria">
+        </div>
+        <div *ngIf="formulario.controls['categoria'].invalid" class="alert" style="color: red;z-index: -99;">La
+          categoria no puede
+          estar vacia</div>
+      </div><br>
+      <hr>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <button type="submit" class="btn btn-outline-success">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+
+
+<!-- <form [formGroup]="formAlan" novalidate (ngSubmit)="submit()">
+      <div class="materialContainer">
+
+          <div class="box">
+              <div class="title">NUEVO CIRCUITO</div>
+
+              <div class="input">
+                  <input type="text" name="nombreGP" id="nombreGP" placeholder="Nombre GP" formControlName="nombreGP">
+              </div>
+              <div *ngIf="formAlan.controls['nombreGP'].invalid" class="alert" style="color: red;z-index: -99;">No puede tener mas de 15 caracteres.</div>
+
+              <div class="input">
+                  <input type="text" name="nombreCircuito" id="nombreCircuito" placeholder="Nombre Circuito" formControlName="nombreCircuito">
+                  <div *ngIf="formAlan.controls['nombreCircuito'].invalid" class="alert" style="color: red;z-index: -99;">No puede tener mas de 20 caracteres.</div>
+              </div>
+
+              <div class="input">
+                  <input type="text" name="paisLocalizacion" id="paisLocalizacion" placeholder="Pais Localización" formControlName="paisLocalizacion">
+                  <div *ngIf="formAlan.controls['paisLocalizacion'].invalid" class="alert" style="color: red;z-index: -99;">El pais es requerido.</div>
+              </div>
+
+              <div class="input">
+                <input type="text" name="email" id="email" placeholder="Email Del Creador" formControlName="email">
+                <div *ngIf="formAlan.controls['email'].invalid" class="alert" style="color: red;z-index: -99;">No contiene un @.</div>
+              </div>
+
+              <div class="button login">
+                  <button appHover [cambiaFondo]="fondo" #fondo type="submit"><span>AÑADIR</span> <i class="fa fa-check"></i></button>
+              </div>
+
+          </div>
+
+      </div>
+
+  </form>
+</body> -->

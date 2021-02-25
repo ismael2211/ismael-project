@@ -1,0 +1,40 @@
+{
+    "boxeadores": [
+        {
+            "id": "1",
+            "nombre": "Mike Tyson",
+            "edad": 50,
+            "photo": "/assets/img/tyson.jpg",
+            "nacionalidad": "Estados Unidos",
+            "descripcion": "Conocido en el mundo como Mike Tyson o Malik Abdul Aziz, es un ex-boxeador estadounidense, reconocido por haber ganado el título mundial de los pesos pesados y por ser el más joven de la historia en conseguir un título de esa categoría.",
+            "cinturones" : ["Negro" , "Verde" , "Azul"]
+        },
+        {
+            "id": "2",
+            "nombre": "Floyd Mayweather",
+            "edad": 43,
+            "photo": "/assets/img/floyd.jpg",
+            "nacionalidad": "Estados Unidos",
+            "descripcion": " Nacido como Floyd Joy Sinclair,​ es un exboxeador profesional estadounidense invicto.",
+            "cinturones" : ["Violeta" , "Gris"]
+        },
+        {
+            "id": "3",
+            "nombre": "Ryan Garcia",
+            "edad": 24,
+            "photo": "/assets/img/ryan.jpg",
+            "nacionalidad": "Colombia",
+            "descripcion": "es un boxeador profesional estadounidense de ascendencia mexicana. Compite en la categoría de peso ligero.",
+            "cinturones" : ["Violeta" , "Lila" , "Amarillo"]
+        },
+        {
+            "id": "4",
+            "nombre": "Manny Paquiao",
+            "edad": 35,
+            "photo": "/assets/img/manny.jpg",
+            "nacionalidad": "México",
+            "descripcion": "así como uno de los mejores de la historia. En palabras del afamado promotor de boxeo Bob Arum: Pacquiao es el mejor boxeador que jamás he visto, incluido Alí",
+            "cinturones" : ["Violeta" , "Lila" , "Amarillo"]
+        }
+    ]
+}
